@@ -2,7 +2,7 @@
 
 # Project 1
 
-<img src="./DS_salary_dashboard/1_Salary_Dashboard.png" width="850" height="500" alt="Salary Dashboard">
+<img src="./DS_salary_dashboard/dashboard_overview.png" width="850" height="500" alt="Salary Dashboard">
 
 ## Introduction
 
@@ -11,7 +11,7 @@ This job salary dashboard was created to help job seekers explore compensation t
 The analysis is based on 2023 job posting data, which includes detailed information on job titles, salaries, locations, and key skills. Using Excel, the dashboard transforms this data into clear, interactive visuals that make it easier to identify patterns in pay, demand, and required qualifications across different roles and regions.
 
 ### Dashboard File
-My final dashboard is in [Analysis_dashboard.xlsx](./DS_salary_dashboard/Analysis_dashboard.xlsx).
+My final dashboard is available for download: [Analysis_dashboard.xlsx](https://github.com/be910/Analysis-Dashboards/raw/main/DS_salary_dashboard/Analysis_Dashboard.xlsx)
 
 ### Excel Skills Used
 
