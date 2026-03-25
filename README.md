@@ -1,4 +1,4 @@
-# Excel Dashboards
+# Data Science Salary Dashboard
 
 # Project 1
 
