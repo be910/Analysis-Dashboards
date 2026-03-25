@@ -2,7 +2,7 @@
 
 # Project 1
 
-![1_Salary_Dashboard.png](/0_Resources/Images/1_Salary_Dashboard_Final_Dashboard.gif)
+![./DS_salary_dashboard/1_Salary_Dashboard.png]
 
 ## Introduction
 
@@ -11,7 +11,7 @@ This job salary dashboard was created to help job seekers explore compensation t
 The analysis is based on 2023 job posting data, which includes detailed information on job titles, salaries, locations, and key skills. Using Excel, the dashboard transforms this data into clear, interactive visuals that make it easier to identify patterns in pay, demand, and required qualifications across different roles and regions.
 
 ### Dashboard File
-My final dashboard is in [1_Salary_Dashboard.xlsx](1_Salary_Dashboard.xlsx).
+My final dashboard is in [./DS_salary_dashboard/Analysis_dashboard.xlsx](./DS_salary_dashboard/Analysis_dashboard.xlsx).
 
 ### Excel Skills Used
 
@@ -27,7 +27,7 @@ The following Excel skills were utilized for analysis:
 
 #### 📊 Data Science Job Salaries - Bar Chart
 
-<img src="/0_Resources/Images/1_Salary_Dashboard_Chart1.png" width="850" height="550" alt="Salary Dashboard Chart1">
+<img src="./DS_salary_dashboard/salary_bar.png" width="850" height="550" alt="Salary Dashboard Chart1">
 
 - 🛠️ **Excel Features:** Utilized bar chart feature (with formatted salary values) and optimized layout for clarity.
 - 🎨 **Design Choice:** Horizontal bar chart for visual comparison of median salaries.
@@ -36,7 +36,7 @@ The following Excel skills were utilized for analysis:
 
 #### 🗺️ Country Median Salaries - Map Chart
 
-![1_Salary_Dashboard_Chart2.png](/0_Resources/Images/1_Salary_Dashboard_Country_Map.gif)
+<img src="./DS_salary_dashboard/country.png" width="850" height="550" alt="Salary Dashboard Chart2">
 
 - 🛠️ **Excel Features:** Utilized Excel's map chart feature to plot median salaries globally.
 - 🎨 **Design Choice:** Color-coded map to visually differentiate salary levels across regions.
@@ -44,49 +44,11 @@ The following Excel skills were utilized for analysis:
 - 👁️ **Visual Enhancement:** Improved readability and immediate understanding of geographic salary trends.
 - 💡 **Insights Gained:** Enables quick grasp of global salary disparities and highlights high/low salary regions.
 
-### 🧮 Formulas and Functions
+#### 📊 Job Scheduler Distribution – Bar Chart
 
-#### 💰 Median Salary by Job Titles
+<img src="./DS_salary_dashboard/job_type.png" width="850" height="550" alt="Job Scheduler Bar Chart">
 
-```
-=MEDIAN(
-IF(
-    (jobs[job_title_short]=A2)*
-    (jobs[job_country]=country)*
-    (ISNUMBER(SEARCH(type,jobs[job_schedule_type])))*
-    (jobs[salary_year_avg]<>0),
-    jobs[salary_year_avg]
-)
-)
-```
-
-- 🔍 **Multi-Criteria Filtering:** Checks job title, country, schedule type, and excludes blank salaries.
-- 📊 **Array Formula:** Utilizes `MEDIAN()` function with nested `IF()` statement to analyze an array.
-- 🎯 **Tailored Insights:** Provides specific salary information for job titles, regions, and schedule types.
-- **🔢 Formula Purpose:** This formula populates the table below, returning the median salary based on job title, country, and type specified.
-
-🍽️ Background Table
-
-![1_Salary_Dashboard_Screenshot1.png](/0_Resources/Images/1_Salary_Dashboard_Screenshot1.png)
-
-📉 Dashboard Implementation
-
-<img src="/0_Resources/Images/1_Salary_Dashboard_Job_Title.png" width="400" height="500" alt="Salary Dashboard Title">
-
-#### ⏰ Count of Job Schedule Type
-
-```
-=FILTER(J2#,(NOT(ISNUMBER(SEARCH("and",J2#))+ISNUMBER(SEARCH(",",J2#))))*(J2#<>0))
-```
-
-- 🔍 **Unique List Generation:** This Excel formula below employs the `FILTER()` function to exclude entries containing "and" or commas, and omit zero values.
-- **🔢 Formula Purpose:** This formula populates the table below, which gives us a list of unique job schedule types.
-
-🍽️ Background Table
-
-![1_Salary_Dashboard_Type.png](/0_Resources/Images/1_Salary_Dashboard_Screenshot2.png)
-
-📉 Dashboard Implementation:
-
-<img src="/0_Resources/Images/1_Salary_Dashboard_Type.png" width="350" height="500" alt="Salary Dashboard Type">
+- 🛠️ **Excel Features:** Created a bar chart to display the frequency of different job schedulers in 2023 job postings.
+- **📊 Data Representation:** Shows the count of job postings associated with each scheduler.
+- **💡 Insights Gained:** Highlights the most commonly used job schedulers in the dataset and industry trends.
 
