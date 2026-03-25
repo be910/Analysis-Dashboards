@@ -34,7 +34,7 @@ The following Excel skills were utilized for analysis:
 
 #### 📊 Data Science Job Salaries - Bar Chart
 
-<img src="./DS_salary_dashboard/salary_bar.png" width="500" height="450" alt="Salary Dashboard Chart1">
+<img src="./DS_salary_dashboard/salary_bar.png" width="400" height="350" alt="Salary Dashboard Chart1">
 
 - 🛠️ **Excel Features:** Utilized bar chart feature (with formatted salary values) and optimized layout for clarity.
 - 🎨 **Design Choice:** Horizontal bar chart for visual comparison of median salaries.
@@ -43,7 +43,7 @@ The following Excel skills were utilized for analysis:
 
 #### 🗺️ Country Median Salaries - Map Chart
 
-<img src="./DS_salary_dashboard/country.png" width="600" height="500" alt="Salary Dashboard Chart2">
+<img src="./DS_salary_dashboard/country.png" width="450" height="400" alt="Salary Dashboard Chart2">
 
 - 🛠️ **Excel Features:** Utilized Excel's map chart feature to plot median salaries globally.
 - 🎨 **Design Choice:** Color-coded map to visually differentiate salary levels across regions.
@@ -53,7 +53,7 @@ The following Excel skills were utilized for analysis:
 
 #### 📊 Job Scheduler Distribution – Bar Chart
 
-<img src="./DS_salary_dashboard/job_type.png" width="500" height="450" alt="Job Scheduler Bar Chart">
+<img src="./DS_salary_dashboard/job_type.png" width="400" height="350" alt="Job Scheduler Bar Chart">
 
 - 🛠️ **Excel Features:** Created a bar chart to display the frequency of different job schedulers in 2023 job postings.
 - **📊 Data Representation:** Shows the count of job postings associated with each scheduler.
